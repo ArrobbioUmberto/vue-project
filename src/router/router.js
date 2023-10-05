@@ -18,7 +18,7 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      component: Default, // Utilizza il layout predefinito
+      component: Default, 
       children: [
         {
           path: "",

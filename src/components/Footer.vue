@@ -158,6 +158,9 @@ function goToAgent() {}
 footer {
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 .container-cm {
   max-width: 1248px;
@@ -213,7 +216,6 @@ ul a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
 }
 .map_box img {
   width: 100%;

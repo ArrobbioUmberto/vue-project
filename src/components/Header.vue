@@ -40,11 +40,11 @@ export default {
   </header>
 </template>
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"); */
 
 .header_box {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
   justify-content: center;
 }
 .col-3 img {
@@ -58,7 +58,7 @@ export default {
   justify-content: space-around;
 }
 .navigation {
-  font-family: "Dela Gothic One", cursive;
+  /* font-family: "Dela Gothic One", cursive; */
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;

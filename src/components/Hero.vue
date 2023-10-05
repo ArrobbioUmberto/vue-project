@@ -5,15 +5,15 @@ export default {
       hero: [
         {
           title: "promo mese",
-          img: "/img/map.webp",
+          img: "/img/hero1.jpeg",
         },
         {
           title: "evento",
-          img: "/img/logoSGR.png",
+          img: "/img/hero2.jpeg",
         },
         {
           title: "youtube",
-          img: "/img/map.webp",
+          img: "/img/hero3.jpeg",
         },
         {
           title: "ultimo arrivo",
@@ -72,9 +72,8 @@ export default {
   position: relative;
 }
 .hero img {
-  flex-shrink: 0;
   width: 100vw;
-  height: 50vh;
+  height: 65vh;
 }
 .arrows {
   display: flex;
@@ -83,17 +82,29 @@ export default {
 }
 
 .arrows button {
-  background: transparent;
+  background: rgba(192, 192, 192, 0.8);
   border: none;
-  font-size: 24px;
+  border-radius: 25px;
+  font-size: 2.5rem;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
 .prev {
-  margin-right: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(12px, -50%);
+  
 }
 
 .next {
-  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-12px,-50%);
+ 
 }
 </style>

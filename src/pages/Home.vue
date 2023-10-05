@@ -1,15 +1,15 @@
 <script>
+import Featured from "../components/Featured.vue";
 import Hero from "../components/Hero.vue";
 export default {
   components: {
     Hero,
+    Featured,
   },
 };
 </script>
 <template>
-  <div>
-    <Hero />
-    <h1>sono in home</h1>
-  </div>
+  <Hero />
+  <Featured />
 </template>
 <style scoped></style>
