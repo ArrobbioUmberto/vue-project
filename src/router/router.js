@@ -6,6 +6,12 @@ import History from "../pages/History.vue";
 import News from "../pages/News.vue";
 import Search from "../pages/Search.vue";
 import AgentSearch from "../pages/AgentSearch.vue";
+import Privacy from "../pages/Privacy.vue";
+import Cookies from "../pages/Cookies.vue";
+import SellConditions from "../pages/SellConditions.vue";
+import Account from "../pages/Account.vue";
+import ShoppingCart from "../pages/ShoppingCart.vue";
+import Orders from "../pages/Orders.vue";
 import { createRouter, createWebHistory } from "vue-router";
 const router = createRouter({
   history: createWebHistory(),
@@ -44,6 +50,30 @@ const router = createRouter({
           meta: {
             showCustomFooter: true,
           },
+        },
+        {
+          path: "/privacy",
+          component: Privacy,
+        },
+        {
+          path: "/cookies",
+          component: Cookies,
+        },
+        {
+          path: "/sell-conditions",
+          component: SellConditions,
+        },
+        {
+          path: "/account",
+          component: Account,
+        },
+        {
+          path: "/shopping-cart",
+          component: ShoppingCart,
+        },
+        {
+          path: "/orders",
+          component: Orders,
         },
       ],
     },

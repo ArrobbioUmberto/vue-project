@@ -30,7 +30,7 @@ function goToAgent() {}
 </script>
 <template>
   <footer>
-    <div class="container">
+    <div class="container-cm">
       <div class="row footer_up">
         <div class="col-5">
           <ul class="list_detail">
@@ -89,15 +89,17 @@ function goToAgent() {}
             <li><router-link to="/privacy">privacy</router-link></li>
             <li><router-link to="/cookies">cookies policy</router-link></li>
             <li>
-              <router-link to="/privacy">condizioni di vendita</router-link>
+              <router-link to="/sell-conditions"
+                >condizioni di vendita</router-link
+              >
             </li>
             <li><router-link to="/contacts">contatti</router-link></li>
           </ul>
           <ul class="list_info">
             <li class="list_title">link rapidi</li>
             <li><router-link to="/account">account</router-link></li>
-            <li><router-link to="/carrello">carrello</router-link></li>
-            <li><router-link to="/ordini">ordini</router-link></li>
+            <li><router-link to="/shopping-cart">carrello</router-link></li>
+            <li><router-link to="/orders">ordini</router-link></li>
           </ul>
         </div>
         <!-- sezione da valutare per utilità lato clienti rispetto alla sezione contatti -->
@@ -156,6 +158,10 @@ function goToAgent() {}
 footer {
   background-color: black;
   color: white;
+}
+.container-cm {
+  max-width: 1248px;
+  padding: 0 2%;
 }
 /* SECTION FOOTER UP  */
 .footer_up {

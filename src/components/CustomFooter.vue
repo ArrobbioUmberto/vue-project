@@ -64,15 +64,17 @@ export default {
             <li><router-link to="/privacy">privacy</router-link></li>
             <li><router-link to="/cookies">cookies policy</router-link></li>
             <li>
-              <router-link to="/privacy">condizioni di vendita</router-link>
+              <router-link to="/sell-conditions"
+                >condizioni di vendita</router-link
+              >
             </li>
             <li><router-link to="/contacts">contatti</router-link></li>
           </ul>
           <ul class="list_info">
             <li class="list_title">link rapidi</li>
             <li><router-link to="/account">account</router-link></li>
-            <li><router-link to="/carrello">carrello</router-link></li>
-            <li><router-link to="/ordini">ordini</router-link></li>
+            <li><router-link to="/shopping-cart">carrello</router-link></li>
+            <li><router-link to="/orders">ordini</router-link></li>
           </ul>
         </div>
       </div>
@@ -125,6 +127,8 @@ footer {
 /* SECTION FOOTER UP  */
 .footer_up {
   padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
 }
 /* SEZIONE CAPITALE SOCIALE E DETTAGLI  */
 

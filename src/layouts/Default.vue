@@ -8,7 +8,11 @@ export default {
     Footer,
     CustomFooter,
   },
- 
+  data() {
+    return {
+      showCustomFooter: false, // Imposta il valore predefinito a false
+    };
+  },
 };
 </script>
 <template>
@@ -16,7 +20,7 @@ export default {
   <main>
     <router-view />
   </main>
-  <component v-if="$route.meta.showCustomFooter" :is="CustomFooter" />
+  <CustomFooter v-if="$route.meta.showCustomFooter" />
   <Footer v-else />
 </template>
 
