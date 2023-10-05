@@ -59,18 +59,19 @@ export default {
           </h1>
         </div>
       </div>
-      <div class="row cm-slider gap-3">
+      <div class="row cm-slider">
         <div
-          class="card col-4 card-cm"
+          class="card card-cm"
           v-for="item in card"
           :class="{ hidden: !item.priority }"
         >
           <img :src="item.img" class="card-img-top" :alt="item.title" />
-          <div class="card-body d-flex justify-content-between flex-column">
+          <div class="card-body d-flex justify-content-around flex-column">
             <h5 class="card-title text-capitalize">{{ item.title }}</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+              perspiciatis. Neque optio provident distinctio voluptatibus
+              voluptas aliquid suscipit magni quod!
             </p>
             <div class="details">
               <a href="#" class="btn">Dettaglio prodotto</a>
@@ -91,17 +92,20 @@ export default {
 .cm-slider {
   overflow-x: auto;
   flex-wrap: nowrap !important;
+  gap: 20px;
 }
 .cm-slider img {
   height: 50%;
   aspect-ratio: 1;
-  padding: 20px;
+  padding: 20px 20px 0;
 }
 .hidden {
   display: none;
-}.card-cm{
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
+}
+.card-cm {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  flex-basis: calc((100% / 3) - 20px);
 }
 .details {
   display: flex;
