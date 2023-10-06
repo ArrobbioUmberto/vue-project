@@ -12,13 +12,14 @@ import SellConditions from "../pages/SellConditions.vue";
 import Account from "../pages/Account.vue";
 import ShoppingCart from "../pages/ShoppingCart.vue";
 import Orders from "../pages/Orders.vue";
+import Catalogs from "../pages/Catalogs.vue";
 import { createRouter, createWebHistory } from "vue-router";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
       path: "/",
-      component: Default, 
+      component: Default,
       children: [
         {
           path: "",
@@ -74,6 +75,10 @@ const router = createRouter({
         {
           path: "/orders",
           component: Orders,
+        },
+        {
+          path: "/catalogs",
+          component: Catalogs,
         },
       ],
     },

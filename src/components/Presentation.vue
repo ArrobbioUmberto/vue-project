@@ -57,7 +57,7 @@ export default {
         },
         {
           id: 4,
-          img: "/logo/logo.jpeg",
+          img: "/img/brands.jpeg",
           title: "Oltre 60 brand",
           subtitle: "Bla Bla Bla",
           description:

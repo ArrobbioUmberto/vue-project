@@ -1,8 +1,18 @@
 <script>
 export default {
+  data() {
+    return {
+      showBrands: false,
+    };
+  },
   name: "Header",
   props: {
     showCustomFooter: Boolean, // Passa la meta-proprietà showCustomFooter come prop
+  },
+  methods: {
+    toggleDropdown() {
+      this.showBrands = !this.showBrands;
+    },
   },
 };
 </script>
@@ -18,8 +28,22 @@ export default {
         <nav class="col-7 nav_box">
           <ul class="navigation">
             <li><router-link to="/">home</router-link></li>
-            <li>categorie</li>
-            <!--(dropdown,con varie famiglie di prodotti)-->
+            <li><router-link to="/catalogs">cataloghi</router-link></li>
+            <li class="drop-brands" @click="toggleDropdown">
+              Brands
+              <div class="wrap" :class="{ hidden: showBrands }">
+                <ul>
+                  <li class="parent-window d-flex flex-nowrap">
+                    <ul>
+                      <li>prima riga A</li>
+                    </ul>
+                    <ul>
+                      <li>prima riga B</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li><router-link to="/search">ricerca</router-link></li>
             <li class="dropdown-mc">
               chi siamo
@@ -41,10 +65,29 @@ export default {
 </template>
 <style scoped>
 /* @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"); */
+/* SEZIONE DROPDOWN DEI BRANDS  */
+header {
+  position: relative;
+}
+.hidden {
+  display: none;
+}
+.wrap {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  height: 400px;
+  background-color: yellow;
+}
+.parent-window {
+  position: absolute;
+}
 
 .header_box {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
 }
 .col-3 img {

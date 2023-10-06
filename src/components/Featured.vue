@@ -16,7 +16,7 @@ export default {
         {
           img: "/img/prodotto.png",
           title: "prodotto bello 3",
-          priority: false,
+          priority: true,
         },
         {
           img: "/img/prodotto.png",
@@ -43,6 +43,16 @@ export default {
           title: "prodotto bello 8",
           priority: true,
         },
+        {
+          img: "/img/prodotto.png",
+          title: "prodotto bello 9",
+          priority: true,
+        },
+        {
+          img: "/img/prodotto.png",
+          title: "prodotto bello 10",
+          priority: true,
+        },
       ],
     };
   },
@@ -54,8 +64,8 @@ export default {
       <div class="row">
         <div class="col">
           <h1 class="featured_title">
-            <!-- I Prodotti che i nostri clienti amano -->
-            Non perderti queste incredibili promozioni
+            I Prodotti che i nostri clienti amano
+            <!-- Non perderti queste incredibili promozioni -->
           </h1>
         </div>
       </div>
