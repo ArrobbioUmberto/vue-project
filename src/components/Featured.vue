@@ -125,7 +125,6 @@ export default {
   color: white;
 }
 .featured_title {
-  white-space: nowrap;
   font-size: 3em;
   padding: 20px 0;
   text-align: center;
@@ -138,15 +137,15 @@ export default {
   align-items: center;
   padding: 20px 0;
 }
-.btn-promo{
-width: fit-content;
-border: none;
-background-color: blue;
-color: white;
-border-radius: 15px;
-padding: 10px 20px;
+.btn-promo {
+  width: fit-content;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 20px;
 }
-.btn-promo:hover{
+.btn-promo:hover {
   background-color: yellow;
   color: black;
 }

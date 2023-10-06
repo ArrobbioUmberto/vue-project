@@ -9,7 +9,7 @@ export default {
         },
         {
           title: "evento",
-          img: "/img/hero2.jpeg",
+          img: "/img/evento.jpeg",
         },
         {
           title: "youtube",
@@ -21,6 +21,8 @@ export default {
         },
       ],
       currentIndex: 0,
+      intervallo: 12000,
+      intervalloAutoPlay: null,
     };
   },
   methods: {
@@ -42,6 +44,12 @@ export default {
         this.currentIndex++;
       }
     },
+    play: function () {
+      this.intervalloAutoPlay = setInterval(this.nextSlide, this.intervallo);
+    },
+  },
+  mounted() {
+    this.play();
   },
 };
 </script>
@@ -97,14 +105,12 @@ export default {
   top: 50%;
   left: 0%;
   transform: translate(12px, -50%);
-  
 }
 
 .next {
   position: absolute;
   top: 50%;
   right: 0%;
-  transform: translate(-12px,-50%);
- 
+  transform: translate(-12px, -50%);
 }
 </style>

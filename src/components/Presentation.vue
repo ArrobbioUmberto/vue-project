@@ -57,8 +57,8 @@ export default {
         },
         {
           id: 4,
-          img: "/img/logoSGR.png",
-          title: "N.1 in Italia distributore ricambi moto",
+          img: "/logo/logo.jpeg",
+          title: "Oltre 60 brand",
           subtitle: "Bla Bla Bla",
           description:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, corporis! Explicabo adipisci vero quam minus cupiditate consequatur esse a pariatur!Soluta hic tempore vitae dolorem id doloremque deserunt laborum at.Laborum deserunt culpa maiores laudantium.Mollitia minima eum quidem cum!",
@@ -78,7 +78,7 @@ export default {
 </script>
 <template>
   <div class="presentation">
-    <div class="container p-5">
+    <div class="container p-5 sizing-cm">
       <swiper
         :cssMode="true"
         :keyboard="true"
@@ -87,7 +87,7 @@ export default {
         :navigation="true"
         :slidesPerView="1"
         :autoplay="{
-          delay: 5000,
+          delay: 10000,
           disableOnInteraction: false,
         }"
         :loop="true"
@@ -101,15 +101,47 @@ export default {
           class="slider-cm"
           v-for="item in ambition"
           :key="item.index"
-          ><img :src="item.img" :alt="item.title"
-        /></swiper-slide>
+          ><img :src="item.img" :alt="item.title" />
+          <div class="text">
+            <h1>{{ item.title }}</h1>
+            <h3>{{ item.subtitle }}</h3>
+            <p>{{ item.description }}</p>
+          </div></swiper-slide
+        >
       </swiper>
     </div>
   </div>
 </template>
 <style scoped>
+.presentation {
+  background-color: black;
+}
+.sizing-cm {
+  height: 800px;
+}
 .slider-cm img {
   width: 100%;
   height: 100%;
+}
+.mySwiper {
+  position: relative;
+  border-radius: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 100%;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: black;
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: end;
+}
+.swiper-slide {
+  height: unset;
 }
 </style>
