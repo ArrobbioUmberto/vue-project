@@ -79,6 +79,9 @@ export default {
           </div>
         </div>
       </div>
+      <div class="row to_promo">
+        <button class="btn-promo">Scopri i prodotti in evidenza</button>
+      </div>
     </div>
   </div>
 </template>
@@ -128,5 +131,23 @@ export default {
   text-align: center;
   font-family: "Tourney", cursive;
   color: blue;
+}
+.to_promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.btn-promo{
+width: fit-content;
+border: none;
+background-color: blue;
+color: white;
+border-radius: 15px;
+padding: 10px 20px;
+}
+.btn-promo:hover{
+  background-color: yellow;
+  color: black;
 }
 </style>
