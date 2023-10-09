@@ -61,20 +61,18 @@ export default {
         <div class="col-3">
           <ul class="list_info">
             <li class="list_title">informazioni</li>
-            <li><router-link to="/privacy">privacy</router-link></li>
-            <li><router-link to="/cookies">cookies policy</router-link></li>
+            <li><a href="/privacy">privacy</a></li>
+            <li><a href="/cookies">cookies policy</a></li>
             <li>
-              <router-link to="/sell-conditions"
-                >condizioni di vendita</router-link
-              >
+              <a href="/sell-conditions">condizioni di vendita</a>
             </li>
-            <li><router-link to="/contacts">contatti</router-link></li>
+            <li><a href="/contacts">contatti</a></li>
           </ul>
           <ul class="list_info">
             <li class="list_title">link rapidi</li>
-            <li><router-link to="/account">account</router-link></li>
-            <li><router-link to="/shopping-cart">carrello</router-link></li>
-            <li><router-link to="/orders">ordini</router-link></li>
+            <li><a href="/account">account</a></li>
+            <li><a href="/shopping-cart">carrello</a></li>
+            <li><a href="/orders">ordini</a></li>
           </ul>
         </div>
       </div>
