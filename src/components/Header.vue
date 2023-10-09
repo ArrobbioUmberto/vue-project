@@ -4,98 +4,288 @@ export default {
     return {
       showBrands: true,
       currentLetter: "A",
+      selectedBrands: [
+        {
+          firstLetter: "A",
+          logo: [
+            {
+              title: "acebikes",
+              img: "./logo/acebikes.jpeg",
+            },
+            {
+              title: "afam",
+              img: "./logo/afam.jpeg",
+            },
+            {
+              title: "all balls",
+              img: "./logo/allballs.jpeg",
+            },
+            {
+              title: "ansell",
+              img: "./logo/ansell.jpeg",
+            },
+          ],
+        },
+      ],
       brands: [
         {
-          firstLetter: "",
-          title: "100%",
+          firstLetter: "123",
+          logo: [
+            {
+              title: "100%",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "A",
-          title: "acebikes",
+          logo: [
+            {
+              title: "acebikes",
+              img: "./logo/acebikes.jpeg",
+            },
+            {
+              title: "afam",
+              img: "./logo/afam.jpeg",
+            },
+            {
+              title: "all balls",
+              img: "./logo/allballs.jpeg",
+            },
+            {
+              title: "ansell",
+              img: "./logo/ansell.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "B",
-          title: "bando",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/bando.jpeg",
+            },
+            {
+              title: "bardahl",
+              img: "./logo/bardahl.jpeg",
+            },
+            {
+              title: "belray",
+              img: "./logo/belray.jpeg",
+            },
+            {
+              title: "beru",
+              img: "./logo/beru.jpeg",
+            },
+            {
+              title: "byterd",
+              img: "./logo/byterd.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "C",
-          title: "cl brakes",
+          logo: [
+            {
+              title: "circuit",
+              img: "./logo/circuit.jpeg",
+            },
+            {
+              title: "clbrakes",
+              img: "./logo/clbrakes.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "D",
-          title: "did",
+          logo: [
+            {
+              title: "denso",
+              img: "./logo/denso.jpeg",
+            },
+            {
+              title: "did",
+              img: "./logo/did.jpeg",
+            },
+            {
+              title: "dit",
+              img: "./logo/dit.jpeg",
+            },
+            {
+              title: "ducati",
+              img: "./logo/ducati.jpeg",
+            },
+            {
+              title: "duracell",
+              img: "./logo/duracell.jpeg",
+            },
+            {
+              title: "dze",
+              img: "./logo/dze.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "E",
-          title: "energy safe",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "F",
-          title: "flosser",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "G",
-          title: "gryyp",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "H",
-          title: "hert",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "K",
-          title: "kellermann",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "M",
-          title: "michelin",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "N",
-          title: "nachi",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "O",
-          title: "optimate",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "P",
-          title: "pirelli",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "R",
-          title: "rapid",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "S",
-          title: "sbs",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "T",
-          title: "topline",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "U",
-          title: "uclear",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "V",
-          title: "vesrah",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "W",
-          title: "wd-40",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "X",
-          title: "xena",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "Y",
-          title: "yuasa",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
         {
           firstLetter: "Z",
-          title: "zadi",
+          logo: [
+            {
+              title: "bando",
+              img: "./logo/logo.jpeg",
+            },
+          ],
         },
       ],
     };
@@ -105,8 +295,19 @@ export default {
     showCustomFooter: Boolean, // Passa la meta-proprietà showCustomFooter come prop
   },
   methods: {
+    preventDropdownClose(event) {
+      event.stopPropagation();
+    },
     toggleDropdown() {
       this.showBrands = !this.showBrands;
+    },
+    selectLetter(letter) {
+      console.log(letter);
+      (this.currentLetter = letter),
+        (this.selectedBrands = this.brands.filter(
+          (product) => product.firstLetter === letter
+        ));
+      console.log(this.selectedBrands[0].logo);
     },
   },
 };
@@ -116,9 +317,7 @@ export default {
     <div class="container p-2">
       <div class="row header_box">
         <div class="col-3">
-          <router-link to="/">
-            <img src="/img/logoSGR.png" alt="logo"
-          /></router-link>
+          <a href="/"> <img src="/img/logoSGR.png" alt="logo" /></a>
         </div>
         <nav class="col-7 nav_box">
           <ul class="navigation">
@@ -126,17 +325,25 @@ export default {
             <li><a href="/catalogs">cataloghi</a></li>
             <li @click="toggleDropdown">
               Brands
-              <div class="wrap" :class="{ hidden: showBrands }">
+              <div
+                class="wrap"
+                :class="{ hidden: showBrands }"
+                @click="preventDropdownClose"
+              >
                 <ul>
-                  <li class="parent-window d-flex flex-nowrap">
+                  <li class="parent-window d-flex flex-nowrap align-items-center">
                     <ul class="row list-index col-4">
-                      <li>
-                        <ul>
-                          <li><h1>indice</h1></li>
-                          <li v-for="item in brands">
-                            <span @click="selectLetter">{{
-                              item.firstLetter
-                            }}</span>
+                      <li
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <ul class="d-flex flex-column gy-5">
+                          <li class="list-letters">
+                            <span
+                              v-for="item in brands"
+                              class="letter"
+                              @click="selectLetter(item.firstLetter)"
+                              >{{ item.firstLetter }}</span
+                            >
                           </li>
                         </ul>
                       </li>
@@ -144,7 +351,19 @@ export default {
                     <ul class="row list-logo col-8">
                       <li>
                         <ul>
-                          <li><h1>brands</h1></li>
+                          <li class="slice-brands">
+                            <div
+                              class="card-brand"
+                              v-for="item in selectedBrands[0].logo"
+                            >
+                              <img
+                                class="logo-brand"
+                                :src="item.img"
+                                :alt="item.title"
+                              />
+                              <h3 class="text-center">{{ item.title }}</h3>
+                            </div>
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -177,6 +396,11 @@ export default {
 header {
   position: relative;
 }
+.header_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .hidden {
   display: none;
 }
@@ -187,7 +411,8 @@ header {
   right: 0;
   z-index: 999999;
   height: 400px;
-  background-color: yellow;
+  background-color: white;
+  border: 1px solid black;
 }
 /* SEZIONE DEL DROPDOWN BRAND  */
 .parent-window {
@@ -198,13 +423,37 @@ header {
 .list-index {
   display: flex;
 }
-.list-brand {
+.list-logo {
   display: flex;
 }
-.header_box {
+.list-letters {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 10px;
+}
+.letter {
+  flex-basis: 15%;
+  text-align: center;
+  border-radius: 25px;
+  background-color: rgba(128, 128, 128, 0.8);
+  padding: 10px 0;
+  width: min-content;
+  color: white;
+}
+.letter:hover {
+  background-color: rgba(0, 0, 255, 0.8);
+  cursor: pointer;
+}
+.slice-brands {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  padding-left: 10px;
+}
+.logo-brand {
+  width: 150px;
+  height: 150px;
 }
 .col-3 img {
   width: 100%;
@@ -228,7 +477,7 @@ header {
   font-size: 1.2rem;
   text-transform: capitalize;
 }
-.navigation li:hover,
+
 .navigation a:hover {
   color: red;
   cursor: pointer;
