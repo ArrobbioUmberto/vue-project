@@ -2,7 +2,102 @@
 export default {
   data() {
     return {
-      showBrands: false,
+      showBrands: true,
+      currentLetter: "A",
+      brands: [
+        {
+          firstLetter: "",
+          title: "100%",
+        },
+        {
+          firstLetter: "A",
+          title: "acebikes",
+        },
+        {
+          firstLetter: "B",
+          title: "bando",
+        },
+        {
+          firstLetter: "C",
+          title: "cl brakes",
+        },
+        {
+          firstLetter: "D",
+          title: "did",
+        },
+        {
+          firstLetter: "E",
+          title: "energy safe",
+        },
+        {
+          firstLetter: "F",
+          title: "flosser",
+        },
+        {
+          firstLetter: "G",
+          title: "gryyp",
+        },
+        {
+          firstLetter: "H",
+          title: "hert",
+        },
+        {
+          firstLetter: "K",
+          title: "kellermann",
+        },
+        {
+          firstLetter: "M",
+          title: "michelin",
+        },
+        {
+          firstLetter: "N",
+          title: "nachi",
+        },
+        {
+          firstLetter: "O",
+          title: "optimate",
+        },
+        {
+          firstLetter: "P",
+          title: "pirelli",
+        },
+        {
+          firstLetter: "R",
+          title: "rapid",
+        },
+        {
+          firstLetter: "S",
+          title: "sbs",
+        },
+        {
+          firstLetter: "T",
+          title: "topline",
+        },
+        {
+          firstLetter: "U",
+          title: "uclear",
+        },
+        {
+          firstLetter: "V",
+          title: "vesrah",
+        },
+        {
+          firstLetter: "W",
+          title: "wd-40",
+        },
+        {
+          firstLetter: "X",
+          title: "xena",
+        },
+        {
+          firstLetter: "Y",
+          title: "yuasa",
+        },
+        {
+          firstLetter: "Z",
+          title: "zadi",
+        },
+      ],
     };
   },
   name: "Header",
@@ -27,33 +122,46 @@ export default {
         </div>
         <nav class="col-7 nav_box">
           <ul class="navigation">
-            <li><router-link to="/">home</router-link></li>
-            <li><router-link to="/catalogs">cataloghi</router-link></li>
-            <li class="drop-brands" @click="toggleDropdown">
+            <li><a href="/">home</a></li>
+            <li><a href="/catalogs">cataloghi</a></li>
+            <li @click="toggleDropdown">
               Brands
               <div class="wrap" :class="{ hidden: showBrands }">
                 <ul>
                   <li class="parent-window d-flex flex-nowrap">
-                    <ul>
-                      <li>prima riga A</li>
+                    <ul class="row list-index col-4">
+                      <li>
+                        <ul>
+                          <li><h1>indice</h1></li>
+                          <li v-for="item in brands">
+                            <span @click="selectLetter">{{
+                              item.firstLetter
+                            }}</span>
+                          </li>
+                        </ul>
+                      </li>
                     </ul>
-                    <ul>
-                      <li>prima riga B</li>
+                    <ul class="row list-logo col-8">
+                      <li>
+                        <ul>
+                          <li><h1>brands</h1></li>
+                        </ul>
+                      </li>
                     </ul>
                   </li>
                 </ul>
               </div>
             </li>
-            <li><router-link to="/search">ricerca</router-link></li>
+            <li><a href="/search">ricerca</a></li>
             <li class="dropdown-mc">
               chi siamo
               <div class="dropdown-content">
-                <router-link to="/history">storia</router-link>
-                <router-link to="/news">news</router-link>
+                <a href="/history">storia</a>
+                <a href="/news">news</a>
               </div>
             </li>
             <!-- (dropdown, chi siamo e news) -->
-            <li><router-link to="/contacts">contatti</router-link></li>
+            <li><a href="/contacts">contatti</a></li>
           </ul>
         </nav>
         <div class="col-2 login_box">
@@ -81,10 +189,18 @@ header {
   height: 400px;
   background-color: yellow;
 }
+/* SEZIONE DEL DROPDOWN BRAND  */
 .parent-window {
   position: absolute;
+  width: 100%;
+  height: 100%;
 }
-
+.list-index {
+  display: flex;
+}
+.list-brand {
+  display: flex;
+}
 .header_box {
   display: flex;
   align-items: center;
