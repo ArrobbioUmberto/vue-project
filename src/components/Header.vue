@@ -129,8 +129,12 @@ export default {
           firstLetter: "E",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "ecie",
+              img: "./logo/ecie.jpeg",
+            },
+            {
+              title: "energysafe",
+              img: "./logo/energysafe.jpeg",
             },
           ],
         },
@@ -138,8 +142,20 @@ export default {
           firstLetter: "F",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "FCC",
+              img: "./logo/FCC.jpeg",
+            },
+            {
+              title: "fivegloves",
+              img: "./logo/fivegloves.jpeg",
+            },
+            {
+              title: "flosser",
+              img: "./logo/flosser.jpeg",
+            },
+            {
+              title: "furukawa",
+              img: "./logo/furukawa.jpeg",
             },
           ],
         },
@@ -147,8 +163,12 @@ export default {
           firstLetter: "G",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "gryyp",
+              img: "./logo/gryyp.jpeg",
+            },
+            {
+              title: "guilera",
+              img: "./logo/guilera.jpeg",
             },
           ],
         },
@@ -156,8 +176,8 @@ export default {
           firstLetter: "H",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "hert",
+              img: "./logo/hert.jpeg",
             },
           ],
         },
@@ -165,8 +185,20 @@ export default {
           firstLetter: "K",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "kellermann",
+              img: "./logo/kellermann.jpeg",
+            },
+            {
+              title: "ken",
+              img: "./logo/ken.jpeg",
+            },
+            {
+              title: "koyo",
+              img: "./logo/koyo.jpeg",
+            },
+            {
+              title: "kryptonite",
+              img: "./logo/kryptonite.jpeg",
             },
           ],
         },
@@ -174,8 +206,28 @@ export default {
           firstLetter: "M",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "mahle",
+              img: "./logo/mahle.jpeg",
+            },
+            {
+              title: "michelin",
+              img: "./logo/michelin.jpeg",
+            },
+            {
+              title: "mitas",
+              img: "./logo/mitas.jpeg",
+            },
+            {
+              title: "mitsuba",
+              img: "./logo/mitsuba.jpeg",
+            },
+            {
+              title: "mitsuboshi",
+              img: "./logo/mitsuboshi.jpeg",
+            },
+            {
+              title: "miw",
+              img: "./logo/miw.jpeg",
             },
           ],
         },
@@ -183,8 +235,20 @@ export default {
           firstLetter: "N",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "nachi",
+              img: "./logo/nachi.jpeg",
+            },
+            {
+              title: "ng",
+              img: "./logo/ng.jpeg",
+            },
+            {
+              title: "ngk",
+              img: "./logo/ngk.jpeg",
+            },
+            {
+              title: "ntn",
+              img: "./logo/ntn.jpeg",
             },
           ],
         },
@@ -192,8 +256,8 @@ export default {
           firstLetter: "O",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "optimate",
+              img: "./logo/optimate.jpeg",
             },
           ],
         },
@@ -201,8 +265,24 @@ export default {
           firstLetter: "P",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "philips",
+              img: "./logo/philips.jpeg",
+            },
+            {
+              title: "pirelli",
+              img: "./logo/pirelli.jpeg",
+            },
+            {
+              title: "powerthunder",
+              img: "./logo/powerthunder.jpeg",
+            },
+            {
+              title: "progrip",
+              img: "./logo/progrip.jpeg",
+            },
+            {
+              title: "putoline",
+              img: "./logo/putoline.jpeg",
             },
           ],
         },
@@ -210,8 +290,8 @@ export default {
           firstLetter: "R",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "rapid",
+              img: "./logo/rapid.jpeg",
             },
           ],
         },
@@ -219,8 +299,32 @@ export default {
           firstLetter: "S",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "sachs",
+              img: "./logo/sachs.jpeg",
+            },
+            {
+              title: "sbs",
+              img: "./logo/sbs.jpeg",
+            },
+            {
+              title: "shapeheart",
+              img: "./logo/shapeheart.jpeg",
+            },
+            {
+              title: "showa",
+              img: "./logo/showa.jpeg",
+            },
+            {
+              title: "skyrich",
+              img: "./logo/skyrich.jpeg",
+            },
+            {
+              title: "spconnect",
+              img: "./logo/spconnect.jpeg",
+            },
+            {
+              title: "supersprox",
+              img: "./logo/supersprox.jpeg",
             },
           ],
         },
@@ -228,8 +332,12 @@ export default {
           firstLetter: "T",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "topline",
+              img: "./logo/topline.jpeg",
+            },
+            {
+              title: "triom",
+              img: "./logo/triom.jpeg",
             },
           ],
         },
@@ -237,8 +345,16 @@ export default {
           firstLetter: "U",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "uclear",
+              img: "./logo/uclear.jpeg",
+            },
+            {
+              title: "ufi",
+              img: "./logo/ufi.jpeg",
+            },
+            {
+              title: "up",
+              img: "./logo/up.jpeg",
             },
           ],
         },
@@ -246,8 +362,12 @@ export default {
           firstLetter: "V",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "veerubber",
+              img: "./logo/veerubber.jpeg",
+            },
+            {
+              title: "vesrah",
+              img: "./logo/vesrah.jpeg",
             },
           ],
         },
@@ -255,8 +375,12 @@ export default {
           firstLetter: "W",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "wd-40",
+              img: "./logo/wd-40.jpeg",
+            },
+            {
+              title: "wrp",
+              img: "./logo/wrp.jpeg",
             },
           ],
         },
@@ -264,8 +388,8 @@ export default {
           firstLetter: "X",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "xena",
+              img: "./logo/xena.jpeg",
             },
           ],
         },
@@ -273,8 +397,12 @@ export default {
           firstLetter: "Y",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "yss",
+              img: "./logo/yss.jpeg",
+            },
+            {
+              title: "yuasa",
+              img: "./logo/yuasa.jpeg",
             },
           ],
         },
@@ -282,8 +410,8 @@ export default {
           firstLetter: "Z",
           logo: [
             {
-              title: "bando",
-              img: "./logo/logo.jpeg",
+              title: "zadi",
+              img: "./logo/zadi.jpeg",
             },
           ],
         },
@@ -331,7 +459,9 @@ export default {
                 @click="preventDropdownClose"
               >
                 <ul>
-                  <li class="parent-window d-flex flex-nowrap align-items-center">
+                  <li
+                    class="parent-window d-flex flex-nowrap align-items-center"
+                  >
                     <ul class="row list-index col-4">
                       <li
                         class="d-flex justify-content-center align-items-center"
@@ -452,7 +582,7 @@ header {
   padding-left: 10px;
 }
 .logo-brand {
-  width: 150px;
+  width: 100%;
   height: 150px;
 }
 .col-3 img {
