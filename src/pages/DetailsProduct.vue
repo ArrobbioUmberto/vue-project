@@ -41,7 +41,7 @@ export default {
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-6 img_box">
         <div class="row flex-column align-items-center">
           <div class="bigImage">
             <img :src="selectedImage" alt="prodotto-scelto" />
@@ -78,6 +78,7 @@ export default {
 .B {
   background-color: red;
 }
+
 .gallery {
   margin: 0 auto;
   width: 100%;
@@ -86,10 +87,9 @@ export default {
 .gallery img {
   width: calc((100% / 3) - 30px);
   margin: 15px;
-}
-img {
-  max-width: 100%;
+  background-color: transparent;
   border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .arrow {
   cursor: pointer;
@@ -110,5 +110,6 @@ img {
   padding: 20px;
   width: 100%;
   height: 100%;
+  border-radius: 15px;
 }
 </style>
