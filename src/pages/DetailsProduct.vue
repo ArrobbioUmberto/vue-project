@@ -5,12 +5,11 @@ export default {
       product: {
         productImages: [
           // Elenco delle immagini dei prodotti
-          "/img/brands.jpeg",
-          "/img/consegne.jpg",
-          "/img/cross1.jpeg",
-          "/img/cross2.jpeg",
-          "/img/evento.jpeg",
-          "/img/prodotto.png",
+          "/img/prodotto1.jpeg",
+          "/img/prodotto2.jpeg",
+          "/img/prodotto3.jpeg",
+          "/img/prodotto4.jpeg",
+          "/img/prodotto5.jpeg",
         ],
         currentIndex: 0, // Immagine iniziale selezionata
       },
@@ -52,18 +51,20 @@ export default {
             <div class="d-flex">
               <div class="d-flex gallery">
                 <img
-                  v-for="(image, index) in product.productImages"
+                  v-for="(image, index) in visibleProductImages"
                   :key="index"
                   :src="image"
                   alt="immagine"
-                  @click="selectImage(index)"
+                  @click="selectImage(product.productImages.indexOf(image))"
                 />
               </div>
             </div>
             <div class="arrow right" @click="scrollImages(1)">&#11157;</div>
           </div>
         </div>
-        <div class="text-center">{{ product.currentIndex + 1 }} di 6</div>
+        <div class="text-center">
+          {{ product.currentIndex + 1 }} di {{ product.productImages.length }}
+        </div>
       </div>
       <div class="col-6 A">COL DETTAGLI</div>
     </div>
@@ -79,12 +80,12 @@ export default {
 }
 .gallery {
   margin: 0 auto;
-  gap: 30px;
   width: 100%;
   overflow-x: auto;
 }
 .gallery img {
   width: calc((100% / 3) - 30px);
+  margin: 15px;
 }
 img {
   max-width: 100%;
@@ -92,10 +93,13 @@ img {
 }
 .arrow {
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
+  background-color: rgba(128, 128, 128, 0.6);
+  color: white;
+  border-radius: 25px;
+  padding: 5px;
 }
 .left {
-  margin-right: 10px;
   transform: rotate(180deg);
 }
 .bigImage {
