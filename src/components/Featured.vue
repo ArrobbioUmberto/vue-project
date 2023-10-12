@@ -84,7 +84,7 @@ export default {
               voluptas aliquid suscipit magni quod!
             </p>
             <div class="details">
-              <a href="#" class="btn">Dettaglio prodotto</a>
+              <a href="/details-product" class="btn">Dettaglio prodotto</a>
             </div>
           </div>
         </div>

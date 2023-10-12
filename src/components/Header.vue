@@ -510,7 +510,7 @@ export default {
               </div>
             </li>
             <!-- (dropdown, chi siamo e news) -->
-            <li><a href="/contacts">contatti</a></li>
+            <li><a href="/events">Eventi</a></li>
           </ul>
         </nav>
         <div class="col-2 login_box">

@@ -1,7 +1,7 @@
 import Home from "../pages/Home.vue";
 import Products from "../pages/Products.vue";
 import Default from "../layouts/Default.vue";
-import Contacts from "../pages/Contacts.vue";
+import Events from "../pages/Events.vue";
 import History from "../pages/History.vue";
 import News from "../pages/News.vue";
 import Search from "../pages/Search.vue";
@@ -13,6 +13,7 @@ import Account from "../pages/Account.vue";
 import ShoppingCart from "../pages/ShoppingCart.vue";
 import Orders from "../pages/Orders.vue";
 import Catalogs from "../pages/Catalogs.vue";
+import DetailsProduct from "../pages/DetailsProduct.vue";
 import { createRouter, createWebHistory } from "vue-router";
 const router = createRouter({
   history: createWebHistory(),
@@ -30,8 +31,8 @@ const router = createRouter({
           component: Products,
         },
         {
-          path: "/contacts",
-          component: Contacts,
+          path: "/events",
+          component: Events,
         },
         {
           path: "/history",
@@ -79,6 +80,10 @@ const router = createRouter({
         {
           path: "/catalogs",
           component: Catalogs,
+        },
+        {
+          path: "/details-product",
+          component: DetailsProduct,
         },
       ],
     },

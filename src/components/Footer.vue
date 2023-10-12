@@ -93,7 +93,6 @@ function goToAgent() {}
                 >condizioni di vendita</router-link
               >
             </li>
-            <li><router-link to="/contacts">contatti</router-link></li>
           </ul>
           <ul class="list_info">
             <li class="list_title">link rapidi</li>

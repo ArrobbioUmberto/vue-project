@@ -66,7 +66,6 @@ export default {
             <li>
               <a href="/sell-conditions">condizioni di vendita</a>
             </li>
-            <li><a href="/contacts">contatti</a></li>
           </ul>
           <ul class="list_info">
             <li class="list_title">link rapidi</li>
