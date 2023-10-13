@@ -50,6 +50,13 @@ export default {
     };
   },
   computed: {
+    imageStyle() {
+      const numImages = this.product.productImages.length - 1;
+      const widthCSS = `calc((100% / ${numImages}) - 30px)`;
+      return {
+        width: widthCSS,
+      };
+    },
     selectedImage() {
       return this.product.productImages[this.product.currentIndex];
     },
@@ -89,6 +96,7 @@ export default {
                   :key="index"
                   :src="image"
                   alt="immagine"
+                  :style="imageStyle"
                   @click="selectImage(product.productImages.indexOf(image))"
                 />
               </div>
@@ -198,11 +206,8 @@ export default {
 }
 .gallery {
   margin: 0 auto;
-  width: 100%;
-  overflow-x: auto;
 }
 .gallery img {
-  width: calc((100% / 3) - 30px);
   margin: 15px;
   background-color: transparent;
   border-radius: 15px;
@@ -338,7 +343,7 @@ export default {
   font-weight: bold;
 }
 .barcode img {
-  margin-left: 1rem;
+  margin-left: 25%;
 }
 
 /* SEZIONE CATEGORIA E ACCESSORI  */
