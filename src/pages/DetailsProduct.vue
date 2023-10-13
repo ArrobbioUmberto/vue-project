@@ -13,6 +13,40 @@ export default {
         ],
         currentIndex: 0, // Immagine iniziale selezionata
       },
+      related_product: [
+        {
+          img: "/img/prodotto.png",
+          title:
+            "OCCHIALI DA SOLE 100% KONNOR - MATTE TRANSLUCENT BROWN FADE - LENTI HIPER A SPECCHIO ARGENTO",
+          price: 19.99,
+          priority: true,
+        },
+        {
+          img: "/img/prodotto1.jpeg",
+          title: "GUANTI DONNA FIVE WFX DISTRICT WP BLACK (M)",
+          price: 19.99,
+          priority: true,
+        },
+        {
+          img: "/img/prodotto2.jpeg",
+          title:
+            "SP UNIVERSAL PHONE CLAMP MAX SPC+ - PORTACELLULARE UNIVERSALE A MORSETTO MAX SPC+",
+          price: 19.99,
+          priority: true,
+        },
+        {
+          img: "/img/cross1.jpeg",
+          title: "CAVALLETTO POSTERIORE TOPLINE CON ATTACCO A V",
+          price: 19.99,
+          priority: true,
+        },
+        {
+          img: "/img/cross2.jpeg",
+          title: "CARICABATTERIE ENERGYSAFE 6V/12V PREMIUM14",
+          price: 19.99,
+          priority: true,
+        },
+      ],
     };
   },
   computed: {
@@ -66,9 +100,13 @@ export default {
           {{ product.currentIndex + 1 }} di {{ product.productImages.length }}
         </div>
       </div>
-      <div class="col-6 d-flex align-items-center flex-column">
+      <div class="col-6 detail_box">
         <div class="row">
-          <div class="col"><h1 class="product_name">nome prodotto</h1></div>
+          <div class="col">
+            <h1 class="product_name">
+              tyrefix basic - set di fissaggio per ruota posteriori
+            </h1>
+          </div>
         </div>
         <div class="row justify-content-around">
           <div class="pills text">
@@ -93,18 +131,51 @@ export default {
             </p>
           </div>
         </div>
-        <div class="row C">
-          <div class="col">descrizione</div>
+        <div class="row">
+          <div class="col">
+            <h2 class="description_title">descrizione:</h2>
+            <p class="description_text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+              enim. Vitae dignissimos delectus quidem itaque quos laudantium
+              dolorum explicabo eligendi! Beatae officiis itaque animi atque qui
+              vitae aliquid doloribus illum? Maxime omnis nisi fugit
+              reprehenderit expedita delectus dolores ab blanditiis.
+            </p>
+          </div>
         </div>
-        <div class="row D"><div class="col">barcode</div></div>
-        <div class="row E"><div class="col">categoria->accessori</div></div>
+        <div class="row w-100">
+          <div class="col d-flex align-items-center p-0 barcode">
+            <h2>barcode:</h2>
+            <img src="/public/allballs.png" alt="codebar" />
+          </div>
+        </div>
+        <div class="row w-100">
+          <div class="col category p-0">
+            <h2>categoria:</h2>
+            <span>accessori</span>
+            <span> > cavalletti</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row B">prodotti correlati</div>
+  </div>
+  <div class="container p-5">
+    <div class="row flex-column text-center">
+      <div class="col">
+        <h3 class="title">anche questo potrebbe interessare</h3>
+      </div>
+      <div class="col wrapper">
+        <div v-for="item in related_product" class="card">
+          <img :src="item.img" :alt="item.title" />
+          <h1>{{ item.title }}</h1>
+          <p>{{ item.price }} &euro;</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 .A {
   background-color: yellow;
 }
@@ -160,16 +231,24 @@ export default {
 }
 
 /* SEZIONE COLONNA DI DESTRA CON DETTAGLI PRODOTTO E CODICI  */
+.detail_box {
+  font-family: "Chakra Petch", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .product_name {
   text-transform: uppercase;
   padding: 20px;
   font-weight: bold;
-  font-family: "Chakra Petch", sans-serif;
+  font-size: 2.2rem;
 }
 
 .iva_text {
   margin-top: 10px;
   font-size: 0.6rem;
+  text-align: end;
+  margin-right: 10px;
 }
 .code_text,
 .price_text {
@@ -202,5 +281,73 @@ export default {
 .detail_code {
   font-size: 2rem;
   font-weight: bold;
+}
+
+/* SEZIONE CON I PRODOTTI CORRELATI  */
+.title {
+  padding: 20px;
+  font-family: "Chakra Petch", sans-serif;
+  text-transform: uppercase;
+}
+.wrapper {
+  display: flex;
+  gap: 20px;
+  margin: 20px auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc((100% / 5) - 20px);
+  font-weight: bold;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.card h1 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+}
+.card p {
+  margin-top: auto;
+}
+
+/* SEZIONE CON DETTAGLI PRODOTTO  */
+
+/* SEZIONE DESCRIZIONE  */
+.description_text {
+  font-size: 1rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+.description_title {
+  font-family: "Chakra Petch", sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+/* SEZIONE BARCODE  */
+.barcode h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.barcode img {
+  margin-left: 1rem;
+}
+
+/* SEZIONE CATEGORIA E ACCESSORI  */
+.category h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.category span {
+  text-transform: uppercase;
+  font-family: "Chakra Petch", sans-serif;
 }
 </style>
