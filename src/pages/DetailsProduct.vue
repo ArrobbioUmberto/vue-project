@@ -143,18 +143,33 @@ export default {
           <div class="col">
             <h2 class="description_title">descrizione:</h2>
             <p class="description_text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-              enim. Vitae dignissimos delectus quidem itaque quos laudantium
-              dolorum explicabo eligendi! Beatae officiis itaque animi atque qui
-              vitae aliquid doloribus illum? Maxime omnis nisi fugit
-              reprehenderit expedita delectus dolores ab blanditiis.
+              Le cinghie Tyrefix sono la soluzione migliore per fissare la ruota
+              posteriore della tua moto. Assicura un fissaggio sicuro ed una
+              protezione totale e grazie al suo materiale flessibile e
+              resistente si adatta ad ogni tipo di pneumatico.
             </p>
+            <h3 class="subtitle_detail">Caratteristiche principali:</h3>
+            <ul>
+              <li>Facile e veloce da installare</li>
+              <li>Speciale materiale di attrito</li>
+              <li>
+                Include una solida borsa dotata di comoda maniglia per il
+                trasporto
+              </li>
+            </ul>
+            <h3 class="subtitle_detail">Dettagli tecnici</h3>
+            <ul>
+              <li>Materiale: poliestere</li>
+              <li>Lunghezza cinghie: 65 cm</li>
+              <li>Peso netto: 2,1 kg</li>
+              <li>Dimensioni (LxPxA): 40x23x6 cm</li>
+            </ul>
           </div>
         </div>
         <div class="row w-100">
           <div class="col d-flex align-items-center p-0 barcode">
             <h2>barcode:</h2>
-            <img src="/public/allballs.png" alt="codebar" />
+            <img src="/barcode2.png" alt="codebar" />
           </div>
         </div>
         <div class="row w-100">
@@ -293,6 +308,8 @@ export default {
   padding: 20px;
   font-family: "Chakra Petch", sans-serif;
   text-transform: uppercase;
+  font-size: 2.3rem;
+  font-weight: 600;
 }
 .wrapper {
   display: flex;
@@ -336,6 +353,9 @@ export default {
   font-family: "Chakra Petch", sans-serif;
   text-transform: capitalize;
   font-weight: bold;
+}
+.subtitle_detail {
+  margin-top: 0.7rem;
 }
 /* SEZIONE BARCODE  */
 .barcode h2 {
