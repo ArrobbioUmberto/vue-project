@@ -54,11 +54,12 @@
   flex-direction: column;
   justify-content: center;
   margin: 2rem auto;
+  font-family: "Chakra Petch", sans-serif;
 }
 .history h1 {
   text-align: center;
   text-transform: uppercase;
-  font-family: "Dela Gothic One", cursive;
+  font-weight: bold;
   color: rgb(207, 50, 18);
 }
 .text-story {
@@ -67,6 +68,11 @@
   align-items: center;
   padding: 20px;
   gap: 2rem;
+  font-weight: 500;
+}
+.text-story p {
+  text-align: center;
+  line-height: 2rem;
 }
 .text-story img {
   border-radius: 15px;
@@ -75,8 +81,10 @@
 .group {
   text-align: center;
   text-transform: uppercase;
-  font-family: "Dela Gothic One", cursive;
   color: rgb(207, 50, 18);
+}
+.group h2 {
+  font-weight: bold;
 }
 .group-logo {
   display: flex;

@@ -160,6 +160,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: start;
+  font-family: "Chakra Petch", sans-serif;
 }
 .container-cm {
   max-width: 1248px;
@@ -171,10 +172,10 @@ footer {
 }
 /* SEZIONE CAPITALE SOCIALE E DETTAGLI  */
 
-.list_detail li:first-child {
-  font-size: 1rem;
+.list_detail h3 {
+  font-size: 2rem;
   font-weight: bold;
-  font-family: "Dela Gothic One", cursive;
+  font-family: "Chakra Petch", sans-serif;
 }
 .title_society_detail {
   font-weight: 800;
@@ -194,7 +195,7 @@ h4 img {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
-  font-family: "Dela Gothic One", cursive;
+  font-family: "Chakra Petch", sans-serif;
 }
 ul li {
   text-transform: capitalize;

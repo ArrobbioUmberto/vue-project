@@ -526,6 +526,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Chakra Petch", sans-serif;
 }
 .hidden {
   display: none;

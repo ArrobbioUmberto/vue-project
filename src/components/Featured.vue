@@ -101,6 +101,7 @@ export default {
   background-image: url("/img/cross1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Chakra Petch", sans-serif;
 }
 .cm-slider {
   overflow-x: auto;

@@ -120,6 +120,7 @@ export default {
 footer {
   background-color: black;
   color: white;
+  font-family: "Chakra Petch", sans-serif;
 }
 /* SECTION FOOTER UP  */
 .footer_up {
@@ -132,7 +133,6 @@ footer {
 .list_detail li:first-child {
   font-size: 1rem;
   font-weight: bold;
-  font-family: "Dela Gothic One", cursive;
 }
 .title_society_detail {
   font-weight: 800;
@@ -152,7 +152,6 @@ h4 img {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
-  font-family: "Dela Gothic One", cursive;
 }
 ul li {
   text-transform: capitalize;

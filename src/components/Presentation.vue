@@ -113,9 +113,6 @@ export default {
   </div>
 </template>
 <style scoped>
-.presentation {
-  background-color: black;
-}
 .sizing-cm {
   height: 800px;
 }
@@ -126,10 +123,11 @@ export default {
 .mySwiper {
   position: relative;
   border-radius: 25px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 30px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 30px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 30px -2px 6px 0px inset;
   height: 100%;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .text {
@@ -143,5 +141,12 @@ export default {
 }
 .swiper-slide {
   height: unset;
+}
+.presentation {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(11, 39, 95, 1) 100%
+  );
 }
 </style>
