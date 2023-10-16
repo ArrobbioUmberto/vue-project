@@ -108,7 +108,6 @@ export default {
   align-items: center;
 }
 .live_title {
-  font-family: "Tourney", cursive;
   color: rgb(207, 50, 18);
   margin-top: 2rem;
   text-transform: capitalize;
@@ -134,7 +133,7 @@ export default {
   text-transform: capitalize;
   text-align: center;
   margin: 1rem auto;
-  font-family: "Tourney", cursive;
+  font-family: "Chakra Petch", sans-serif;
   color: rgb(207, 50, 18);
 }
 .latest_items img {
@@ -179,7 +178,7 @@ export default {
   padding: 20px;
   margin-top: 2rem;
   color: rgb(207, 50, 18);
-  font-family: "Tourney", cursive;
+  font-family: "Chakra Petch", sans-serif;
 }
 .box_news_items {
   display: flex;
