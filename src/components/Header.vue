@@ -503,11 +503,7 @@ export default {
             </li>
             <li><a href="/search">ricerca</a></li>
             <li class="dropdown-mc">
-              chi siamo
-              <div class="dropdown-content">
-                <a href="/history">storia</a>
-                <a href="/news">news</a>
-              </div>
+              <a href="/history"> chi siamo</a>
             </li>
             <!-- (dropdown, chi siamo e news) -->
             <li><a href="/events">Eventi</a></li>
