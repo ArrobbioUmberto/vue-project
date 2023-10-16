@@ -34,6 +34,14 @@ export default {
       ],
     };
   },
+  computed: {
+    lasteThree() {
+      const sortedNews = this.news.sort((a, b) => {
+        return new Date(b.data) - new Date(a.data);
+      });
+      return sortedNews.slice(0, 3);
+    },
+  },
 };
 </script>
 <template>
@@ -46,15 +54,29 @@ export default {
         </div>
       </div>
     </div>
-    <div class="container -">
-      <div class="row news">
+    <div class="container box_news">
+      <div class="row">
         <div class="col"><h1 class="news_title">news</h1></div>
+      </div>
+      <div class="row news">
+        <div class="col-3 latest_news">
+          <h1 class="latest_title">latest news</h1>
+          <div
+            class="latest_items"
+            v-for="(article, index) in lasteThree"
+            :key="index"
+          >
+            <img :src="article.img" :alt="article.title" />
+            <p class="title">{{ article.title }}</p>
+            <p class="data">{{ article.data }}</p>
+          </div>
+        </div>
         <div class="col box_news_items">
           <div class="news_item" v-for="item in news">
-            <div class="img_box col-4">
+            <div class="img_box col">
               <img :src="item.img" alt="item.title" />
             </div>
-            <div class="description_box col-8">
+            <div class="description_box col-7">
               <h2>{{ item.title }}</h2>
               <p>{{ item.text }}</p>
               <p class="data">{{ item.data }}</p>
@@ -90,7 +112,7 @@ export default {
   color: rgb(207, 50, 18);
   margin-top: 2rem;
   text-transform: capitalize;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   padding: 20px;
 }
 .video {
@@ -102,13 +124,49 @@ export default {
   padding: 10%;
   width: 70%;
 }
+/* SEZIONE LATEST NEWS  */
+
+.latest_items {
+  padding: 1rem;
+}
+.latest_title {
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 1rem auto;
+  font-family: "Tourney", cursive;
+  color: rgb(207, 50, 18);
+}
+.latest_items img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.latest_items .data {
+  color: white;
+  margin-left: 5px;
+}
+.latest_items .title {
+  color: white;
+  font-weight: bold;
+  padding: 3px;
+}
 
 /* SEZIONE DELLE NEWS  */
-
-.news {
+.box_news {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 4rem;
+}
+.news {
+  display: flex;
+  flex-direction: row;
   font-family: "Chakra Petch", sans-serif;
+  gap: 20px;
 }
 .news .col {
   display: flex;
@@ -121,12 +179,12 @@ export default {
   padding: 20px;
   margin-top: 2rem;
   color: rgb(207, 50, 18);
+  font-family: "Tourney", cursive;
 }
 .box_news_items {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem 0;
 }
 .news_item {
   display: flex;
