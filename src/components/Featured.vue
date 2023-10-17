@@ -5,52 +5,56 @@ export default {
       card: [
         {
           img: "/img/prodotto.png",
-          title: "prodotto bello 1",
+          title:
+            "OCCHIALI DA SOLE 100% KONNOR - MATTE TRANSLUCENT BROWN FADE - LENTI HIPER A SPECCHIO ARGENTO",
+          priority: true,
+        },
+        {
+          img: "/img/cross2.jpeg",
+          title: "GUANTI DONNA FIVE WFX DISTRICT WP BLACK (M)",
+          priority: true,
+        },
+        {
+          img: "/img/cross1.jpeg",
+          title:
+            "SP UNIVERSAL PHONE CLAMP MAX SPC+ - PORTACELLULARE UNIVERSALE A MORSETTO MAX SPC+",
+          priority: true,
+        },
+        {
+          img: "/img/prodotto1.jpeg",
+          title: "CARICABATTERIE ENERGYSAFE 6V/12V PREMIUM14",
+          priority: true,
+        },
+        {
+          img: "/img/prodotto2.jpeg",
+          title: "CAVALLETTO POSTERIORE TOPLINE CON ATTACCO A V",
           priority: true,
         },
         {
           img: "/img/prodotto.png",
-          title: "prodotto bello 2",
+          title:
+            "OCCHIALI DA SOLE 100% KONNOR - MATTE TRANSLUCENT BROWN FADE - LENTI HIPER A SPECCHIO ARGENTO",
           priority: true,
         },
         {
           img: "/img/prodotto.png",
-          title: "prodotto bello 3",
+          title: "GUANTI DONNA FIVE WFX DISTRICT WP BLACK (M)",
           priority: true,
         },
         {
           img: "/img/prodotto.png",
-          title: "prodotto bello 4",
+          title:
+            "SP UNIVERSAL PHONE CLAMP MAX SPC+ - PORTACELLULARE UNIVERSALE A MORSETTO MAX SPC+",
           priority: true,
         },
         {
           img: "/img/prodotto.png",
-          title: "prodotto bello 5",
+          title: "CARICABATTERIE ENERGYSAFE 6V/12V PREMIUM14",
           priority: true,
         },
         {
           img: "/img/prodotto.png",
-          title: "prodotto bello 6",
-          priority: true,
-        },
-        {
-          img: "/img/prodotto.png",
-          title: "prodotto bello 7",
-          priority: true,
-        },
-        {
-          img: "/img/prodotto.png",
-          title: "prodotto bello 8",
-          priority: true,
-        },
-        {
-          img: "/img/prodotto.png",
-          title: "prodotto bello 9",
-          priority: true,
-        },
-        {
-          img: "/img/prodotto.png",
-          title: "prodotto bello 10",
+          title: "CAVALLETTO POSTERIORE TOPLINE CON ATTACCO A V",
           priority: true,
         },
       ],
@@ -64,7 +68,7 @@ export default {
       <div class="row">
         <div class="col">
           <h1 class="featured_title">
-            I Prodotti che i nostri clienti amano
+            I nostri prodotti in evidenza
             <!-- Non perderti queste incredibili promozioni -->
           </h1>
         </div>
@@ -136,10 +140,10 @@ export default {
   color: white;
 }
 .featured_title {
-  font-size: 3em;
+  font-size: 5rem;
   padding: 20px 0;
   text-align: center;
-  font-family: "Tourney", cursive;
+  font-family: "Chakra Petch", sans-serif;
   color: blue;
 }
 .to_promo {
