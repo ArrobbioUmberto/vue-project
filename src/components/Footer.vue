@@ -102,43 +102,45 @@ function goToAgent() {}
           </ul>
         </div>
         <!-- sezione da valutare per utilità lato clienti rispetto alla sezione contatti -->
-        <div id="map" class="col-4 map_box">
-          <div id="map">
-            <img src="/img/map.webp" alt="mappa statica" />
+        <div class="col-4">
+          <div class="row map_box">
+            <div id="map">
+              <img src="/img/map.webp" alt="mappa statica" />
+            </div>
+            <div class="col mt-4">
+              <ul class="social">
+                <li>
+                  <a
+                    href="https://www.facebook.com/sgr.italia/?locale=it_IT"
+                    target="_blank"
+                    ><img src="/icon/facebook.png" alt="facebook.png"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/sgr.italia/?hl=it"
+                    target="_blank"
+                    ><img src="/icon/instagram.png" alt="instagram.png"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/sgr-italia/"
+                    target="_blank"
+                    ><img src="/icon/linkedin.png" alt="linkedin.png"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@sgr.italia" target="_blank"
+                    ><img src="/icon/youtube.png" alt="youtube.png"
+                  /></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       <div class="row footer_down">
-        <div class="col-4">
-          <ul class="social">
-            <li>
-              <a
-                href="https://www.facebook.com/sgr.italia/?locale=it_IT"
-                target="_blank"
-                ><img src="/icon/facebook.png" alt="facebook.png"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/sgr.italia/?hl=it"
-                target="_blank"
-                ><img src="/icon/instagram.png" alt="instagram.png"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/company/sgr-italia/"
-                target="_blank"
-                ><img src="/icon/linkedin.png" alt="linkedin.png"
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@sgr.italia" target="_blank"
-                ><img src="/icon/youtube.png" alt="youtube.png"
-              /></a>
-            </li>
-          </ul>
-        </div>
         <div class="col-4 copyright">
           <p>© Copyright 1998-2021 SGR. All Rights Reserved.</p>
           <p>Icons made by monkik from www.flaticon.com</p>
@@ -169,9 +171,13 @@ footer {
 /* SEZIONE CAPITALE SOCIALE E DETTAGLI  */
 
 .list_detail h3 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: "Chakra Petch", sans-serif;
+}
+.list_detail h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 .title_society_detail {
   font-weight: 800;
@@ -181,8 +187,8 @@ footer {
   margin-left: 10px;
 }
 h4 img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin-right: 10px;
 }
 /* SEZIONE LINK UTILI  */
@@ -190,7 +196,7 @@ h4 img {
 .list_title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Chakra Petch", sans-serif;
 }
 ul li {
@@ -201,7 +207,19 @@ ul a:hover {
   color: red;
   text-decoration: underline;
 }
-/* SEZIONE MAPPA E CERCA AGENTE  */
+/* SEZIONE MAPPA E SOCIAL  */
+
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+.social img {
+  width: 100%;
+  height: 100%;
+}
+
 /* PARTE DI GOOGLE MAPS  */
 /* #map {
   height: 100%;
@@ -213,7 +231,7 @@ ul a:hover {
   flex-direction: column;
   align-items: center;
 }
-.map_box img {
+#map img {
   width: 100%;
   height: 100%;
   border-radius: 25px;
@@ -244,20 +262,8 @@ ul a:hover {
 .footer_down {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem 0;
-}
-
-/* SECTION SOCIAL  */
-.social {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 10px;
-}
-.social img {
-  width: 80%;
-  height: 100%;
 }
 
 /* SEZIONE COPYRIGHT  */
