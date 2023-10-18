@@ -4,7 +4,7 @@
     <div class="row history">
       <div class="col"><h1>la nostra storia</h1></div>
       <div class="col text-story">
-        <img src="/public/img/la-sede.jpeg" alt="la sede" />
+        <img src="/img/la-sede.jpeg" alt="la sede" />
         <p>
           La Società Generale Ricambi (Europa) p.A. nasce nel 1953 da un'idea
           dei fratelli Alberto e Franco Saporetti. L'azienda si è imposta
@@ -40,9 +40,17 @@
       <div class="col group">
         <h2>il nostro gruppo</h2>
         <div class="group-logo">
-          <img src="/public/moraco.png" alt="moraco" />
-          <img src="/public/langensheidt.png" alt="langenscheidt" />
-          <img src="/public/euromoto.jpeg" alt="euromoto" />
+          <a href="https://www.moraco.fr/" target="_blank">
+            <img src="/moraco.png" alt="moraco"
+          /></a>
+
+          <a href="https://langenscheidt-gmbh.com/" target="_blank">
+            <img src="/langensheidt.png" alt="langenscheidt"
+          /></a>
+
+          <a href="https://www.euromoto85.com/" target="_blank">
+            <img src="/euromoto.jpeg" alt="euromoto"
+          /></a>
         </div>
       </div>
     </div>

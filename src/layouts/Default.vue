@@ -1,28 +1,23 @@
 <script>
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
-import CustomFooter from "../components/CustomFooter.vue";
 export default {
   components: {
     Header,
     Footer,
-    CustomFooter,
   },
   data() {
-    return {
-      showCustomFooter: false, // Imposta il valore predefinito a false
-    };
+    return {};
   },
 };
 </script>
 <template>
-  <Header :showCustomFooter="showCustomFooter" />
+  <Header />
   <main>
     <router-view />
   </main>
-  <CustomFooter v-if="$route.meta.showCustomFooter" />
-  <Footer v-else />
+
+  <Footer />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

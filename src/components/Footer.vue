@@ -106,10 +106,6 @@ function goToAgent() {}
           <div id="map">
             <img src="/img/map.webp" alt="mappa statica" />
           </div>
-          <div class="agent_search">
-            <p class="agent_description">Cerca l'agente più vicino a te</p>
-            <router-link to="/agent"> <button>Cerca</button> </router-link>
-          </div>
         </div>
       </div>
       <div class="row footer_down">

@@ -420,7 +420,7 @@ export default {
   },
   name: "Header",
   props: {
-    showCustomFooter: Boolean, // Passa la meta-proprietà showCustomFooter come prop
+    showCustomFooter: Boolean, // Passo la meta-proprietà showCustomFooter come prop
   },
   methods: {
     preventDropdownClose(event) {
@@ -442,7 +442,7 @@ export default {
 </script>
 <template>
   <header>
-    <div class="container p-2">
+    <div class="container p-2 mt-4">
       <div class="row header_box">
         <div class="col-3">
           <a href="/"> <img src="/img/logoSGR.png" alt="logo" /></a>

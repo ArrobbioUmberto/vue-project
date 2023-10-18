@@ -5,7 +5,6 @@ import Events from "../pages/Events.vue";
 import History from "../pages/History.vue";
 import News from "../pages/News.vue";
 import Search from "../pages/Search.vue";
-import AgentSearch from "../pages/AgentSearch.vue";
 import Privacy from "../pages/Privacy.vue";
 import Cookies from "../pages/Cookies.vue";
 import SellConditions from "../pages/SellConditions.vue";
@@ -45,13 +44,6 @@ const router = createRouter({
         {
           path: "/search",
           component: Search,
-        },
-        {
-          path: "/agent",
-          component: AgentSearch,
-          meta: {
-            showCustomFooter: true,
-          },
         },
         {
           path: "/privacy",
