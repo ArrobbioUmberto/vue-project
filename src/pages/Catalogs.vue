@@ -5,7 +5,7 @@ export default {
       catalogs: [
         {
           title: " catalogo 1",
-          anno_pubblicazione: "2023",
+          anno_pubblicazione: "2020",
           image: "/catalogs/cat-accessori-23.jpeg",
         },
         {
@@ -35,7 +35,7 @@ export default {
         },
         {
           title: " catalogo 7",
-          anno_pubblicazione: "2023",
+          anno_pubblicazione: "2019",
           image: "/catalogs/cat-miw-2023.jpeg",
         },
         {
@@ -43,8 +43,74 @@ export default {
           anno_pubblicazione: "2021",
           image: "/catalogs/sp-connect.jpeg",
         },
+        {
+          title: " catalogo 9",
+          anno_pubblicazione: "2023",
+          image: "/catalogs/cat-accessori-23.jpeg",
+        },
+        {
+          title: " catalogo 10",
+          anno_pubblicazione: "2024",
+          image: "/catalogs/accessori-24.jpeg",
+        },
+        {
+          title: " catalogo 11",
+          anno_pubblicazione: "2023",
+          image: "/catalogs/cat-allballs.jpeg",
+        },
+        {
+          title: " catalogo 12",
+          anno_pubblicazione: "2021",
+          image: "/catalogs/cat-catene-corone.jpeg",
+        },
+        {
+          title: " catalogo 13",
+          anno_pubblicazione: "2023",
+          image: "/catalogs/cat-hert.jpeg",
+        },
+        {
+          title: " catalogo 14",
+          anno_pubblicazione: "2023",
+          image: "/catalogs/cat-lub-23.jpeg",
+        },
+        {
+          title: " catalogo 15",
+          anno_pubblicazione: "2023",
+          image: "/catalogs/cat-miw-2023.jpeg",
+        },
+        {
+          title: " catalogo 16",
+          anno_pubblicazione: "2021",
+          image: "/catalogs/sp-connect.jpeg",
+        },
       ],
+      selectedCatalogs: {},
+      currentPage: 1,
+      catalogsPerPage: 8,
+      selectedYear: null,
+      filteredCatalogs: [],
     };
+  },
+  methods: {
+    getPageCatalogs() {
+      const startIndex = (this.currentPage - 1) * this.catalogsPerPage;
+      const endIndex = startIndex + this.catalogsPerPage;
+      return this.filteredCatalogs.slice(startIndex, endIndex);
+    },
+    filterCatalogsByYear(year) {
+      this.selectedYear = year;
+      this.currentPage = 1;
+      if (this.selectedYear) {
+        this.filteredCatalogs = this.catalogs.filter(
+          (catalog) => catalog.anno_pubblicazione === this.selectedYear
+        );
+      } else {
+        this.filteredCatalogs = this.catalogs;
+      }
+    },
+  },
+  created() {
+    this.filteredCatalogs = [...this.catalogs];
   },
 };
 </script>
@@ -53,12 +119,16 @@ export default {
     <h1 class="title_section">Cataloghi</h1>
     <div class="row">
       <div class="selector_year">
-        <button>tutti</button><button>2024</button><button>2023</button
-        ><button>2021</button><button>2020</button><button>2019</button>
+        <button @click="filterCatalogsByYear(null)">tutti</button
+        ><button @click="filterCatalogsByYear('2024')">2024</button
+        ><button @click="filterCatalogsByYear('2023')">2023</button
+        ><button @click="filterCatalogsByYear('2021')">2021</button
+        ><button @click="filterCatalogsByYear('2020')">2020</button
+        ><button @click="filterCatalogsByYear('2019')">2019</button>
       </div>
     </div>
     <div class="catalogs">
-      <div class="catalogs_item" v-for="item in catalogs">
+      <div class="catalogs_item" v-for="item in getPageCatalogs()">
         <div class="box_img">
           <img :src="item.image" :alt="item.title" />
         </div>
@@ -68,6 +138,17 @@ export default {
           <button>download</button>
         </div>
       </div>
+    </div>
+    <div class="pagination_controls">
+      <button @click="currentPage -= 1" :disabled="currentPage === 1">
+        Precedente
+      </button>
+      <button
+        @click="currentPage += 1"
+        :disabled="currentPage * catalogsPerPage >= filteredCatalogs.length"
+      >
+        Successivo
+      </button>
     </div>
   </div>
 </template>
@@ -106,7 +187,7 @@ export default {
 .catalogs {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px 10px;
 }
 .catalogs_item {
   position: relative;
@@ -140,5 +221,19 @@ export default {
   color: white;
   align-self: center;
   background-color: rgb(207, 50, 19);
+}
+
+/* SEZIONE DEI BOTTONI PER INDICIZZARE  */
+
+.pagination_controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 10px;
+}
+.pagination_controls button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 15px;
 }
 </style>
