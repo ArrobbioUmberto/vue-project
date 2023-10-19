@@ -18,7 +18,65 @@
           <button>invia</button>
         </form>
       </div>
-      <div class="col">col mappa</div>
+      <div class="col map_box">
+        <div class="row flex-column">
+          <div class="map col">
+            <img src="/public/img/map.webp" alt="mappa" />
+          </div>
+          <div class="sedi col">
+            <div class="bologna">
+              <div class="d-flex">
+                <img src="/public/icon/point_map.png" alt="point-of-view" />
+                <h1>bologna</h1>
+              </div>
+              <div class="d-flex">
+                <img src="/public/icon/building.png" alt="building" />
+                <div>
+                  <p>Via Armaroli, 10/12</p>
+                  <p>40012 Calderara di Reno(BO)</p>
+                </div>
+              </div>
+              <p>
+                <i class="fa-solid fa-phone-volume"></i>
+                <a href="tel:(+39) 051722557">+39 051722557</a>
+              </p>
+              <p>
+                <i class="fa-solid fa-fax"></i>
+                <a href="tel:(+39) 051.720376">+39 051720376</a>
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <a href="mailto:info@sgr-it.com">info@sgr-it.com</a>
+              </p>
+            </div>
+            <div class="milano">
+              <div class="d-flex">
+                <img src="/public/icon/point_map.png" alt="point-of-view" />
+                <h1>milano</h1>
+              </div>
+              <div class="d-flex">
+                <img src="/public/icon/building.png" alt="building" />
+                <div>
+                  <p>Via P. Sottocorno, 52</p>
+                  <p>20129 Milano</p>
+                </div>
+              </div>
+              <p>
+                <i class="fa-solid fa-phone-volume"></i>
+                <a href="tel:(+39) 027382368">+39 027382368</a>
+              </p>
+              <p>
+                <i class="fa-solid fa-phone-volume"></i>
+                <a href="tel:(+39) 0276110273">+39 0276110273</a>
+              </p>
+              <p>
+                <i class="fa-solid fa-fax"></i>
+                <a href="tel:(+39) 0270106598">+39 0270106598</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -51,5 +109,44 @@
   line-height: 2rem;
   border: 1px solid black;
   padding: 5px;
+}
+.map_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  font-family: "Chakra Petch", sans-serif;
+}
+.map img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+.sedi {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.sedi i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.bologna img,
+.milano img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+.bologna a,
+.milano a {
+  color: black;
+}
+.bologna h1,
+.milano h1 {
+  text-transform: capitalize;
+}
+.sedi p {
+  margin: 0;
+  padding-bottom: 5px;
 }
 </style>
