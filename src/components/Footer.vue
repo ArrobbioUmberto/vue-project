@@ -83,7 +83,7 @@ function goToAgent() {}
             </li>
           </ul>
         </div>
-        <div class="col-3">
+        <div class="col-3 d-flex flex-column gap-5">
           <ul class="list_info">
             <li class="list_title">informazioni</li>
             <li><router-link to="/privacy">privacy</router-link></li>
@@ -104,8 +104,16 @@ function goToAgent() {}
         <!-- sezione da valutare per utilità lato clienti rispetto alla sezione contatti -->
         <div class="col-4">
           <div class="row map_box">
-            <div id="map">
-              <img src="/img/map.webp" alt="mappa statica" />
+            <div id="map" class="col">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2842.5380145726117!2d11.274369476119173!3d44.5655593929471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd19669ef02e3%3A0x7a6c2a73b6b9eff8!2sSociet%C3%A0%20Generale%20Ricambi!5e0!3m2!1sit!2sit!4v1697729155159!5m2!1sit!2sit"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
             <div class="col mt-4">
               <ul class="social">
@@ -228,10 +236,11 @@ ul a:hover {
 .map_box {
   padding: 10px 0;
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: center;
 }
-#map img {
+#map iframe {
   width: 100%;
   height: 100%;
   border-radius: 25px;
