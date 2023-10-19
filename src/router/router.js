@@ -13,6 +13,7 @@ import ShoppingCart from "../pages/ShoppingCart.vue";
 import Orders from "../pages/Orders.vue";
 import Catalogs from "../pages/Catalogs.vue";
 import DetailsProduct from "../pages/DetailsProduct.vue";
+import Contacts from "../pages/Contacts.vue";
 import { createRouter, createWebHistory } from "vue-router";
 const router = createRouter({
   history: createWebHistory(),
@@ -76,6 +77,10 @@ const router = createRouter({
         {
           path: "/details-product",
           component: DetailsProduct,
+        },
+        {
+          path: "/contacts",
+          component: Contacts,
         },
       ],
     },

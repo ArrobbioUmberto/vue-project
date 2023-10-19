@@ -505,8 +505,8 @@ export default {
             <li class="dropdown-mc">
               <a href="/history"> chi siamo</a>
             </li>
-            <!-- (dropdown, chi siamo e news) -->
             <li><a href="/events">Eventi</a></li>
+            <li><a href="/contacts">Contatti</a></li>
           </ul>
         </nav>
         <div class="col-2 login_box">
