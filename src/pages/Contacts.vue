@@ -21,7 +21,6 @@
       <div class="col map_box">
         <div class="row flex-column">
           <div class="map col">
-            <!-- <img src="/public/img/map.webp" alt="mappa" /> -->
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2842.5380145726117!2d11.274369476119173!3d44.5655593929471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd19669ef02e3%3A0x7a6c2a73b6b9eff8!2sSociet%C3%A0%20Generale%20Ricambi!5e0!3m2!1sit!2sit!4v1697729155159!5m2!1sit!2sit"
               width="600"
@@ -35,11 +34,11 @@
           <div class="sedi col">
             <div class="bologna">
               <div class="d-flex">
-                <img src="/public/icon/point_map.png" alt="point-of-view" />
+                <img src="/icon/point_map.png" alt="point-of-view" />
                 <h1>bologna</h1>
               </div>
               <div class="d-flex">
-                <img src="/public/icon/building.png" alt="building" />
+                <img src="/icon/building.png" alt="building" />
                 <div>
                   <p>Via Armaroli, 10/12</p>
                   <p>40012 Calderara di Reno(BO)</p>
@@ -60,11 +59,11 @@
             </div>
             <div class="milano">
               <div class="d-flex">
-                <img src="/public/icon/point_map.png" alt="point-of-view" />
+                <img src="/icon/point_map.png" alt="point-of-view" />
                 <h1>milano</h1>
               </div>
               <div class="d-flex">
-                <img src="/public/icon/building.png" alt="building" />
+                <img src="/icon/building.png" alt="building" />
                 <div>
                   <p>Via P. Sottocorno, 52</p>
                   <p>20129 Milano</p>
