@@ -1,5 +1,10 @@
 <script>
+import VueMagnifier from "@websitebeaver/vue-magnifier";
+import "@websitebeaver/vue-magnifier/styles.css";
 export default {
+  components: {
+    VueMagnifier,
+  },
   data() {
     return {
       product: {
@@ -49,6 +54,7 @@ export default {
       ],
     };
   },
+
   computed: {
     imageStyle() {
       const numImages = this.product.productImages.length - 1;
@@ -85,7 +91,13 @@ export default {
       <div class="col-6 img_box">
         <div class="row flex-column align-items-center">
           <div class="bigImage">
-            <img :src="selectedImage" alt="prodotto-scelto" />
+            <VueMagnifier
+              :src="selectedImage"
+              height="100%"
+              mgWidth="250"
+              mgHeight="250"
+              zoomFactor= 0.7
+            />
           </div>
           <div class="d-flex align-items-center">
             <div class="arrow left" @click="scrollImages(-1)">&#11157;</div>
@@ -242,6 +254,8 @@ export default {
 .bigImage {
   width: 100%;
   height: 500px;
+  position: relative;
+  display: inline-block;
 }
 .bigImage img {
   padding: 20px;
@@ -375,4 +389,6 @@ export default {
   text-transform: uppercase;
   font-family: "Chakra Petch", sans-serif;
 }
+
+/* LENTE DI INGRANDIMENTO  */
 </style>
