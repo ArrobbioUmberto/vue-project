@@ -16,8 +16,8 @@ export default {
           img: "/img/hero3.jpeg",
         },
         {
-          title: "ultimo arrivo",
-          img: "/img/logoSGR.png",
+          title: "catalogo",
+          img: "/img/catalogo_hero.jpeg",
         },
       ],
       currentIndex: 0,
