@@ -450,7 +450,6 @@ export default {
         <nav class="col-7 nav_box">
           <ul class="navigation">
             <li><a href="/">home</a></li>
-            <li><a href="/catalogs">cataloghi</a></li>
             <li @click="toggleDropdown">
               Brands
               <div
@@ -501,6 +500,7 @@ export default {
                 </ul>
               </div>
             </li>
+            <li><a href="/catalogs">cataloghi</a></li>
             <li><a href="/search">ricerca</a></li>
             <li class="dropdown-mc">
               <a href="/history"> chi siamo</a>
