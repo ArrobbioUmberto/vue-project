@@ -81,7 +81,7 @@ export default {
 }
 .hero img {
   width: 100%;
-  height: 65vh;
+  height: 75vh;
 }
 .arrows {
   display: flex;
